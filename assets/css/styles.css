@@ -325,8 +325,8 @@ img {
 }
 
 /* Add shadow header */
-.shadow-header{
-  box-shadow: 0 1px 16px hsla(0,0%,0%,.12);
+.shadow-header {
+  box-shadow: 0 1px 16px hsla(0, 0%, 0%, .12);
 }
 
 /* Active link */
@@ -356,7 +356,6 @@ img {
 .home__img {
   position: relative;
   z-index: 10;
-
 }
 
 .home__shadow {
@@ -455,7 +454,8 @@ img {
   cursor: pointer;
   overflow: hidden;
   transition: background-color .2s;
-} 
+}
+
 .home__scroll-box i {
   animation: scroll-down 3.5s infinite;
 }
