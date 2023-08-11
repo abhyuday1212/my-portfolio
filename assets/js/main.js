@@ -30,7 +30,7 @@ const linkAction = () => {
 
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-// ==============change BAckground header ========
+// ==============SHADOW HEADER ========
 const shadowHeader = () => {
   const header = document.getElementById("header");
   this.scrollY >= 50
@@ -39,7 +39,6 @@ const shadowHeader = () => {
 };
 window.addEventListener("scroll", shadowHeader);
 
-/*=============== SHADOW HEADER ===============*/
 
 /*=============== EMAIL JS ===============*/
 
