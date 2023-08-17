@@ -629,12 +629,45 @@ img {
 
 }
 
-
-
-
-
-
 /*=============== SERVICES ===============*/
+.services__container {
+  grid-template-columns: 250px;
+  justify-content: center;
+  row-gap: 2rem;
+  padding-top: 1rem;
+}
+
+.services__card {
+  position: relative;
+}
+
+.services__content {
+  height: 100%;
+  background-color: var(--body-color);
+  border: 4px solid var(--black-color);
+  padding: 6rem 1rem 3rem;
+  z-index: 5;
+  position: relative;
+  transition: background-color .4s, border .4s;
+}
+
+.services__border{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*=============== PROJECTS ===============*/
