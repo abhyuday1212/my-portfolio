@@ -571,16 +571,6 @@ img {
   position: absolute;
 }
 
-/* .about__shadow {
-  width: 150px;
-  height: 385px;
-  background-color: var(--body-color);
-  top: -2.5rem;
-  right: -3.5rem;
-  border-bottom: 4px solid var(--first-color);
-  transition: background-color .4s;
-} */
-
 .about__perfil .geometric-box {
   top: 0.5rem;
   right: 12.2rem;
@@ -637,6 +627,7 @@ img {
 }
 
 /*=============== SERVICES ===============*/
+
 .services__container {
   grid-template-columns: 250px;
   justify-content: center;
@@ -705,6 +696,10 @@ img {
   color: var(--text-color);
 }
 
+
+
+
+
 /*=============== PROJECTS ===============*/
 
 .projectcontainer {
@@ -717,11 +712,22 @@ img {
 .card__container {
   padding-block: 5rem;
 }
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  margin-top: 9rem;
+}
 
 .card__content {
   margin-inline: 1.75rem;
   border-radius: 1.25rem;
   overflow: hidden;
+  border: 3px solid var(--project-first-color);
 }
 
 .card__article {
@@ -739,8 +745,9 @@ img {
 }
 
 .card__data {
-  background-color: var(--project-container-color);
+  background-color: var(--body-color);
   padding: 1.5rem 2rem;
+  border-top: 1px solid var(--project-container-color);
   border-radius: 1rem;
   text-align: center;
   position: relative;
