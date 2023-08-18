@@ -1,5 +1,5 @@
 /*=============== CARD ===============*/
-.projectcontainer{
+.container{
    display: flex;
    justify-content: center;
    align-items: center;
@@ -22,12 +22,12 @@
    }
    &__image{
       position: relative;
-      background-color: var(--project-first-color-light);
+      background-color: var(--first-color-light);
       padding-top: 1.5rem;
       margin-bottom: -.75rem;
    }
    &__data{
-      background-color: var(--project-container-color);
+      background-color: var(--container-color);
       padding: 1.5rem 2rem;
       border-radius: 1rem;
       text-align: center;
@@ -43,7 +43,7 @@
    &__shadow{
       width: 200px;
       height: 200px;
-      background-color: var(--project-first-color-alt);
+      background-color: var(--first-color-alt);
       border-radius: 50%;
       position: absolute;
       top: 3.75rem;
@@ -54,7 +54,7 @@
    }
    &__name{
       font-size: var(--h2-font-size);
-      color: var(--project-second-color);
+      color: var(--second-color);
       margin-bottom: .75rem;
    }
    &__description{
@@ -63,10 +63,10 @@
    }
    &__button{
       display: inline-block;
-      background-color: var(--project-first-color);
+      background-color: var(--first-color);
       padding: .75rem 1.5rem;
       border-radius: .25rem;
-      color: var(--project-dark-color);
+      color: var(--dark-color);
       font-weight: 600;
    }
 }
@@ -82,7 +82,7 @@
    width: initial;
    height: initial;
    font-size: 3rem;
-   color: var(--project-second-color);
+   color: var(--second-color);
    display: none;
 }
 
@@ -100,5 +100,5 @@
 }
  
 .swiper-pagination-bullet-active {
-   background-color: var(--project-second-color);
+   background-color: var(--second-color);
 }

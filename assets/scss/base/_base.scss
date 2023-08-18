@@ -1,16 +1,16 @@
 /*=============== BASE ===============*/
-// *{
-// 	box-sizing: border-box;
-// 	padding: 0;
-// 	margin: 0;
-// }
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
 
-// body{
-// 	font-family: var(--project-body-font);
-// 	font-size: var(--normal-font-size);
-// 	background-color: var(--project-body-color);
-// 	color: var(--project-white-color);
-// }
+body{
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+	background-color: var(--body-color);
+	color: var(--white-color);
+}
 
 a{
 	text-decoration: none;

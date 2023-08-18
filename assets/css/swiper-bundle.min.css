@@ -644,7 +644,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-cube.swiper-rtl .swiper-slide {
-    transform-origin: 100% 0
+    transform-origin: 100%
 }
 
 .swiper-cube .swiper-slide-active,

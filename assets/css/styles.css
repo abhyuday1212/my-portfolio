@@ -198,6 +198,12 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
 }
 
 .nav__logo {
@@ -243,6 +249,13 @@ img {
     text-align: center;
     backdrop-filter: blur(8px);
     transition: top 0.5s;
+  }
+
+}
+
+@media screen and (min-width : 1150px) {
+  .nav__menu {
+    display: none;
   }
 
 }
@@ -342,7 +355,12 @@ img {
 /*=============== HOME ===============*/
 .home__container {
   padding-top: 2rem;
-
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
 }
 
 .home__name {
@@ -530,7 +548,12 @@ img {
 .about {
   background-color: var(--container-color);
   transition: background-color .4s;
-
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
 
 }
 
@@ -633,6 +656,12 @@ img {
   justify-content: center;
   row-gap: 2rem;
   padding-top: 1rem;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
 }
 
 .services__card {
@@ -717,6 +746,12 @@ img {
   margin: -92px 0px;
   margin-bottom: 0px;
   padding-bottom: 50px;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
 }
 
 .card__content {
@@ -726,8 +761,6 @@ img {
 }
 
 .card__article {
-  width: 300px;
-  /* Remove after adding swiper js */
   border: 3px solid var(--project-first-color);
   border-radius: 1.25rem;
   overflow: hidden;
@@ -738,23 +771,30 @@ img {
   background-color: var(--project-first-color-light);
   padding-top: 1.5rem;
   margin-bottom: -.75rem;
+  height: 217px;
 }
 
 .card__data {
   background-color: var(--body-color);
-  padding: 1.5rem 2rem;
+  padding: 1.2rem 1rem;
   border-top: 1px solid var(--project-container-color);
   border-radius: 1rem;
   text-align: center;
   position: relative;
   z-index: 10;
+  height: 320px;
 }
 
 .card__img {
-  width: 180px;
-  margin: 0 auto;
-  position: relative;
+  width: 100%;
+  height: 100%;
+  position: absolute;
   z-index: 5;
+  top: 0px;
+  left: 0px;
+  margin-bottom: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .card__shadow {
@@ -821,6 +861,7 @@ img {
 .swiper-pagination-bullet-active {
   background-color: var(--project-second-color);
 }
+
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
