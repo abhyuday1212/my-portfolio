@@ -701,6 +701,10 @@ img {
 
 
 /*=============== PROJECTS ===============*/
+#projects {
+  background-color: var(--container-color);
+  transition: background-color .4s;
+}
 
 .projectcontainer {
   display: flex;
@@ -712,6 +716,7 @@ img {
 .card__container {
   padding-block: 5rem;
 }
+
 .swiper {
   margin-left: auto;
   margin-right: auto;
