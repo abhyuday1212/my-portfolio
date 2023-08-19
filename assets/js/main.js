@@ -76,10 +76,10 @@ const sendEmail = (e) => {
   // serviceID - templateID - #form - publicKey
   emailjs
     .sendForm(
-      "service_g4kt2ys",
-      "template_nuoix3d",
+      "service_3oa37fp",
+      "template_szb17hb",
       "#contact-form",
-      "T7P6vEkT9oSunJBZG"
+      "5-hJkma6ZBy8K-VKr"
     )
     .then(
       () => {
