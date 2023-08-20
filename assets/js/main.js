@@ -68,40 +68,56 @@ let swiperCards = new Swiper(".card__content", {
 });
 
 /*=============== EMAIL JS ===============*/
+
 const contactForm = document.getElementById("contact-form"),
   contactMessage = document.getElementById("contact-message");
 
 const sendEmail = (e) => {
   e.preventDefault();
-  // serviceID - templateID - #form - publicKey
-  emailjs
-    .sendForm(
-      "service_3oa37fp",
-      "template_szb17hb",
-      "#contact-form",
-      "5-hJkma6ZBy8K-VKr"
-    )
-    .then(
-      () => {
-        //show sent message
-        contactMessage.textContent = "Message sent successfully ✅";
 
-        // Remove message after five seconds
-        setTimeout(() => {
-          contactMessage.textContent = "";
-        }, 5000);
+  Email.send({
+    secureToken: "5b4d9066-1f4e-4133-bb26-c44ee1416d62",
+    // Host: "smtp.gmail.com",
+    // Username: "kuch bhi",
+    // Password: "password",
+    To: "apsworks1212@gmail.com",
+    From: document.getElementById("email").value,
+    Phone: document.getElementById("phone").value,
+    Subject: document.getElementById("subject").value,
+    Body:
+      "Name: " +
+      document.getElementById("name").value +
+      "<br> Email:" +
+      document.getElementById("email").value +
+      "<br> Phone:" +
+      document.getElementById("phone").value +
+      "<br> Subject:" +
+      document.getElementById("subject").value +
+      "<br> Message:" +
+      document.getElementById("message").value,
+  }).then(
+    () => {
+      //show sent message
+      contactMessage.textContent = "Message sent successfully ✅";
 
-        // Clear input fields
-        contactForm.reset();
-      },
-      () => {
-        // Show error message
-        contactMessage.textContent = "Message not sent (service error) ❌";
-      }
-    );
+      // Remove message after five seconds
+      setTimeout(() => {
+        contactMessage.textContent = "";
+      }, 4000);
+
+      // Clear input fields
+      contactForm.reset();
+    },
+    () => {
+      // Show error message
+      contactMessage.textContent = "Message not sent (service error) ❌";
+    }
+  );
 };
 
 contactForm.addEventListener("submit", sendEmail);
+
+// ===============================================
 
 /*=============== SHOW SCROLL UP ===============*/
 
