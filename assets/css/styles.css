@@ -1041,7 +1041,17 @@ img {
 .contact__button {
   background-color: var(--first-color);
   cursor: pointer;
+  position: relative;
+  
 }
+.contact__button-icon {
+position: absolute;
+z-index: 100;
+left: 10px;
+top: 0px;
+  
+}
+
 
 .contact__social {
   display: grid;

@@ -68,21 +68,16 @@ let swiperCards = new Swiper(".card__content", {
 });
 
 /*=============== EMAIL JS ===============*/
-
 const contactForm = document.getElementById("contact-form"),
   contactMessage = document.getElementById("contact-message");
 
-const sendEmail = (e) => {
-  e.preventDefault();
-
+const sendEmail = () => {
   Email.send({
-    secureToken: "5b4d9066-1f4e-4133-bb26-c44ee1416d62",
-    // Host: "smtp.gmail.com",
-    // Username: "kuch bhi",
-    // Password: "password",
+    Host: "smtp.elasticemail.com",
+    Username: "apsworks1212@gmail.com",
+    Password: "A24B15D10346160CA5BBB579D17998FF70E4",
     To: "apsworks1212@gmail.com",
-    From: document.getElementById("email").value,
-    Phone: document.getElementById("phone").value,
+    From: "apsworks1212@gmail.com",
     Subject: document.getElementById("subject").value,
     Body:
       "Name: " +
@@ -96,26 +91,26 @@ const sendEmail = (e) => {
       "<br> Message:" +
       document.getElementById("message").value,
   }).then(
-    () => {
-      //show sent message
-      contactMessage.textContent = "Message sent successfully ✅";
+      () => {
+        //show sent message
+        contactMessage.textContent = "Message sent successfully ✅";
 
-      // Remove message after five seconds
-      setTimeout(() => {
-        contactMessage.textContent = "";
-      }, 4000);
+        // Remove message after five seconds
+        setTimeout(() => {
+          contactMessage.textContent = "";
+        }, 5000);
 
-      // Clear input fields
-      contactForm.reset();
-    },
-    () => {
-      // Show error message
-      contactMessage.textContent = "Message not sent (service error) ❌";
-    }
-  );
-};
+        // Clear input fields
+        contactForm.reset();
+      }
+    )
+}
 
-contactForm.addEventListener("submit", sendEmail);
+
+
+
+
+
 
 // ===============================================
 

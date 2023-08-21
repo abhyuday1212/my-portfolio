@@ -452,47 +452,44 @@
                   Send Me A Message
                </h2>
 
-               <form class="contact__form" id="contact-form">
+               <form action="" class="contact__form" id="contact-form">
                   <div class="contact__group">
                      <!-- for aur id same hoti hai hmesa -->
                      <div class="contact__box">
-                        <input type="text" name="name" class="contact__input" id="name" required
-                           placeholder="Full Name">
+                        <input type="text" class="contact__input" id="name" required placeholder="Full Name">
                         <lable for="name" class="contact__label">Name</lable>
 
                      </div>
 
                      <div class="contact__box">
-                        <input type="phone" name="phone" class="contact__input" id="phone" required
-                           placeholder="Phone No.">
+                        <input type="phone" class="contact__input" id="phone" required placeholder="Phone No.">
                         <lable for="phone" class="contact__label">Phone No.</lable>
                      </div>
 
                      <div class="contact__box">
-                        <input type="email" name="email" class="contact__input" id="email" required
-                           placeholder="Your Email Address">
+                        <input type="email" class="contact__input" id="email" required placeholder="Your Email Address">
                         <lable for="email" class="contact__label">Email Address</lable>
                      </div>
 
                   </div>
 
                   <div class="contact__box">
-                     <input type="text" name="subject" class="contact__input" id="subject" required
-                        placeholder="Subject">
+                     <input type="text" class="contact__input" id="subject" required placeholder="Subject">
                      <lable for="subject" class="contact__label">Subject</lable>
                   </div>
 
                   <div class="contact__box contact__area">
-                     <textarea type="submit" class="contact__input" id="message" name="message" required
+                     <textarea type="submit" class="contact__input" id="message" required
                         placeholder="Message"></textarea>
                      <lable for="message" class="contact__label">Message</lable>
                   </div>
 
                   <p class="contact__message" id="contact-message"></p>
 
-                  <button type="submit" class="contact__button button">
-                     <i class="ri-send-plane-fill ">Send Message</i>
-                  </button>
+                  <input type="button" value="Send Message" onclick="sendEmail()"
+                     class="contact__button button ri-send-plane-fill">
+                  </input>
+
                </form>
             </div>
 
@@ -570,12 +567,17 @@
    <script src=""></script>
 
    <!--============== emai js ======================= -->
+
    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
    <!--=============== SWIPER JS ===============-->
+
    <script src="assets/js/swiper-bundle.min.js"></script>
+
    <!--=============== MAIN JS ===============-->
+
    <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
