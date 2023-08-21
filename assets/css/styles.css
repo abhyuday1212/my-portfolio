@@ -919,9 +919,9 @@ img {
   width: 300px;
   height: fit-content;
   background-color: var(--container-color);
-  padding: 3rem 1.5rem 3.5rem;
+  padding: 1.5rem 1.5rem 1.5rem;
   margin-left: auto;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   border-bottom: 4px solid var(--first-color);
   z-index: 5;
   transition: background-color .4s;
@@ -935,7 +935,7 @@ img {
 .contact__description-1 {
   color: var(--title-color);
   font-weight: var(--font-medium);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .contact__description-2 {
@@ -950,14 +950,14 @@ img {
 
 .contact__mail {
   position: relative;
-  background-color: var(--black-color);
+  background-color: #f5f6f7;
   padding: 5rem 1.5rem 2.5rem;
   margin-top: -2.5rem;
   transition: background-color .4s;
 }
 
 .contact__title {
-  color: var(--white-color);
+  color: var(--black-color);
   font-size: var(--h2-font-size);
   margin-bottom: 2rem;
   text-align: center;
@@ -971,7 +971,6 @@ img {
 
 .contact__form {
   position: relative;
-
 }
 
 .contact__box {
@@ -992,9 +991,9 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: var(--black-color);
-  border: 3px solid var(--black-color-light);
-  color: var(--white-color);
+  background-color: #f5f6f7;
+  border: 2px solid var(--black-color-light);
+  color: black;
   padding: .5rem 1rem;
   font-weight: var(--font-medium);
   transition: border .4s, background-color .4s;
@@ -1002,12 +1001,12 @@ img {
 
 .contact__input::placeholder {
   color: var(--text-color-light);
-  transition: opacity .4s;
+  transition: opacity .3s;
 
 }
 
 .contact__input:focus {
-  border: 3px solid var(--white-color);
+  border: 3px solid var(--black-color-light);
 }
 
 .contact__input:-webkit-autofill {
@@ -1018,11 +1017,11 @@ img {
   position: absolute;
   top: 0px;
   left: 10px;
-  color: var(--text-color-light);
+  color: var(--text-color);
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
-  background-color: var(--black-color);
-  padding: 8px;
+  background-color: #f5f6f7;
+  padding: 5px;
   pointer-events: none;
   transition: top .4s, opacity .4s, background-color .4s;
   opacity: 0;
@@ -1042,14 +1041,15 @@ img {
   background-color: var(--first-color);
   cursor: pointer;
   position: relative;
-  
+
 }
+
 .contact__button-icon {
-position: absolute;
-z-index: 100;
-left: 10px;
-top: 0px;
-  
+  position: absolute;
+  z-index: 100;
+  left: 10px;
+  top: 0px;
+
 }
 
 
@@ -1091,23 +1091,44 @@ top: 0px;
 }
 
 .contact__social-link {
+
   background-color: var(--black-color-light);
   padding: 6px;
   color: var(--white-color);
   font-size: 1.25rem;
   display: grid;
   place-items: center;
-  transition: background-color .3s;
+  position: relative;
+  transition: color .2s;
+}
+
+.contact__social-link::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: var(--white-color);
+  position: absolute;
+  left: 0;
+  bottom: -.5rem;
+  transition: width .4s;
 }
 
 
 .contact__social-link:hover {
   background-color: var(--first-color);
+  color: var(--white-color);
 
 }
 
-.contact__message{
-  color: var(--white-color);
+.contact__social-link:hover::after {
+  width: 100%;
+
+}
+
+
+
+.contact__message {
+  color: var(--black-color);
   font-size: var(--small-font-size);
   position: absolute;
   bottom: -1.6rem;

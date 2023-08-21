@@ -73,9 +73,7 @@ const contactForm = document.getElementById("contact-form"),
 
 const sendEmail = () => {
   Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "apsworks1212@gmail.com",
-    Password: "A24B15D10346160CA5BBB579D17998FF70E4",
+    SecureToken: "a39e3a7a-e0ca-44d9-acac-876bd3550a0d",
     To: "apsworks1212@gmail.com",
     From: "apsworks1212@gmail.com",
     Subject: document.getElementById("subject").value,
@@ -90,27 +88,19 @@ const sendEmail = () => {
       document.getElementById("subject").value +
       "<br> Message:" +
       document.getElementById("message").value,
-  }).then(
-      () => {
-        //show sent message
-        contactMessage.textContent = "Message sent successfully ✅";
+  }).then(() => {
+    //show sent message
+    contactMessage.textContent = "Message sent successfully ✅";
 
-        // Remove message after five seconds
-        setTimeout(() => {
-          contactMessage.textContent = "";
-        }, 5000);
+    // Remove message after five seconds
+    setTimeout(() => {
+      contactMessage.textContent = "";
+    }, 5000);
 
-        // Clear input fields
-        contactForm.reset();
-      }
-    )
-}
-
-
-
-
-
-
+    // Clear input fields
+    contactForm.reset();
+  });
+};
 
 // ===============================================
 
