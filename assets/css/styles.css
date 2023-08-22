@@ -355,17 +355,22 @@ img {
 /*=============== HOME ===============*/
 .home__container {
   padding-top: 2rem;
-  -webkit-user-select: none;
+  /* -webkit-user-select: none; */
   /* Safari */
-  -ms-user-select: none;
+  /* -ms-user-select: none; */
   /* IE 10 and IE 11 */
-  user-select: none;
+  /* user-select: none; */
   /* Standard syntax */
 }
 
 .home__name {
   font-size: var(--biggest-font-size);
   text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .home__perfil {
@@ -1151,6 +1156,13 @@ img {
 .contact__input:not(:placeholder-shown).contact__input:not(:focus)+.contact__label {
   opacity: 1;
   top: -16px;
+}
+/* ================== typed js =========== */
+.home__title{
+  color:burlywood ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*=============== FOOTER ===============*/
