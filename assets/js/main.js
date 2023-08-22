@@ -139,22 +139,22 @@ function initializeTyped() {
     loop: false,
   });
 }
+initializeTyped();
 
-
-window.addEventListener("scroll", updateURL);
-    function updateURL() {
-      const scrollY = window.scrollY;
-      const url = `#scroll-${scrollY}`;
-      history.replaceState({}, document.title, url);
-}
+// window.addEventListener("scroll", updateURL);
+//     function updateURL() {
+//       const scrollY = window.scrollY;
+//       const url = `#scroll-${scrollY}`;
+//       history.replaceState({}, document.title, url);
+// }
     
 
-    window.addEventListener('scroll', function () {
-      if (window.location.hash === '#scroll-933.5') {
-        initializeTyped();
-      }
+    // window.addEventListener('scroll', function () {
+    //   if (window.location.hash === '#scroll-933.5') {
+    //     initializeTyped();
+    //   }
     
-    });
+    // });
 
         
 
