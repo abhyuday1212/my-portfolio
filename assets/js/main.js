@@ -88,7 +88,8 @@ const sendEmail = () => {
       document.getElementById("subject").value +
       "<br> Message:" +
       document.getElementById("message").value,
-  }).then(() => {
+  })
+  .then(() => {
     //show sent message
     contactMessage.textContent = "Message sent successfully ✅";
 
@@ -99,15 +100,18 @@ const sendEmail = () => {
 
     // Clear input fields
     contactForm.reset();
-  });
+  }, () => {
+        contactMessage.textContent = "Message NOT sent ❌";
+  }
+  )
 };
 
 // ================== typed js =============================
 
 var typed1 = new Typed(".home__title", {
-  strings: ["Developer", "Designer", "Mentor"],
-  typeSpeed: 50,
-  backSpeed: 50,
+  strings: [" Developer", " UI/UX Designer", " Freelancer", " Mentor"],
+  typeSpeed: 40,
+  backSpeed: 20,
   smartBackspace: true,
   loop: true,
   showCursor: false,
@@ -116,27 +120,27 @@ var typed1 = new Typed(".home__title", {
 function initializeTyped() {
   var typed2 = new Typed(".my-skills", {
     strings: [
-      "My Skills are: <strong>HTML</strong> ",
-      "My Skills are: <strong>CSS</strong> ",
-      "My Skills are: <strong>JavaScript</strong> ",
-      "My Skills are: <strong>Git</strong> ",
-      "My Skills are: <strong>Github</strong> ",
-      "My Skills are: <strong>Bootstrap</strong> ",
-      "My Skills are: <strong>Tailwind</strong> ",
-      "My Skills are: <strong>C</strong> ",
-      "My Skills are: <strong>Java</strong> ",
-      "My Skills are: <strong>Data-Structures</strong> ",
-      "My Skills are: <strong>Figma</strong> ",
-      "My Skills are: <strong>front-end Development</strong> ",
-      "My Skills are: <strong>Web Development</strong> ",
-      "My Skills are: <strong>Netlify</strong> ",
-      "My Skills are: <strong>Analytical Skills</strong> ",
-      "My Skills are: <strong>HTML, CSS, JavaScript, Git, Github, Bootstrap, Tailwind, C, JAVA,DSA, Figma, front-end Development, Web-Development, Netlify,Analytical Skills </strong>",
+      "<strong>HTML</strong> ",
+      "<strong>CSS</strong> ",
+      "<strong>JavaScript</strong> ",
+      "<strong>Git</strong> ",
+      "<strong>Github</strong> ",
+      "<strong>Bootstrap</strong> ",
+      "<strong>Tailwind</strong> ",
+      "<strong>C</strong> ",
+      "<strong>Java</strong> ",
+      "<strong>Data-Structures</strong> ",
+      "<strong>Figma</strong> ",
+      "<strong>front-end Development</strong> ",
+      "<strong>Web Development</strong> ",
+      "<strong>Netlify</strong> ",
+      "<strong>Analytical Skills</strong> ",
+      "<strong>HTML, CSS, JavaScript, Git, Github, Bootstrap, Tailwind, C, JAVA,DSA, Figma, front-end Development, Web-Development, Netlify,Analytical Skills </strong>",
     ],
-    typeSpeed: 0,
+    typeSpeed: 25,
     backSpeed: 0,
     smartBackspace: true,
-    loop: false,
+    loop: true,
   });
 }
 initializeTyped();
@@ -147,16 +151,13 @@ initializeTyped();
 //       const url = `#scroll-${scrollY}`;
 //       history.replaceState({}, document.title, url);
 // }
-    
 
-    // window.addEventListener('scroll', function () {
-    //   if (window.location.hash === '#scroll-933.5') {
-    //     initializeTyped();
-    //   }
-    
-    // });
+// window.addEventListener('scroll', function () {
+//   if (window.location.hash === '#scroll-933.5') {
+//     initializeTyped();
+//   }
 
-        
+// });
 
 /*=============== SHOW SCROLL UP ===============*/
 

@@ -92,8 +92,8 @@
          <div class="home__container container grid">
             <div>
                <h1 class="home__name">Abhyuday Pratap Singh</h1>
-               <div>
-                  <h4><span class="home__title"></span></h4>
+               <div> 
+                  <h3 class="autotype1"><strong class="before__heading">I'm a&nbsp;</strong> <span class="home__title"> </span></h3>
                </div>
             </div>
             <div class="home__perfil">
@@ -192,7 +192,7 @@
 
                <ul class="about__list">
                   <li class="about__item">
-                     <span class="my-skills"></span>
+                     My Skills : <span class="my-skills"></span>
                   </li>
                </ul>
 
@@ -202,12 +202,6 @@
                      class="button__ghost" target="_blank">
                      <i class="ri-folder-download-fill"> Download CV </i>
                   </a>
-                  <!-- 
-                  <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new" class="button"
-                     target="_blank">
-                     <i class="ri-send-plane-fill"> apsworks1212@gmail.com </i>
-                  </a> -->
-
 
                   <a href="https://linktr.ee/abhyuday12" class="button__ghost" target="_blank">
                      <i class="ri-link"> Contact Links </i>
@@ -448,7 +442,7 @@
 
                <p class="contact__description-2">
                   If you need to share any <b>files</b> such as PDFs/images please send them to
-                  <b>apsworks1212@gmail.com</b>
+                  <strong id="contact__email">apsworks1212@gmail.com</strong>
                </p>
 
                <div class="geometric-box"></div>
@@ -463,30 +457,30 @@
                   <div class="contact__group">
                      <!-- for aur id same hoti hai hmesa -->
                      <div class="contact__box">
-                        <input type="text" class="contact__input" id="name" required placeholder="Full Name">
+                        <input type="text" name="name" class="contact__input" id="name" required placeholder="Full Name">
                         <lable for="name" class="contact__label">Name</lable>
 
                      </div>
 
                      <div class="contact__box">
-                        <input type="phone" class="contact__input" id="phone" required placeholder="Phone No.">
+                        <input type="tel" class="contact__input" id="phone" required placeholder="Phone No.">
                         <lable for="phone" class="contact__label">Phone No.</lable>
                      </div>
 
                      <div class="contact__box">
-                        <input type="email" class="contact__input" id="email" required placeholder="Your Email Address">
+                        <input type="email" name="email" class="contact__input" id="email" required placeholder="Your Email Address">
                         <lable for="email" class="contact__label">Email Address</lable>
                      </div>
 
                   </div>
 
                   <div class="contact__box">
-                     <input type="text" class="contact__input" id="subject" required placeholder="Subject">
+                     <input type="text" name="subject" class="contact__input" id="subject" required placeholder="Subject">
                      <lable for="subject" class="contact__label">Subject</lable>
                   </div>
 
                   <div class="contact__box contact__area">
-                     <textarea type="submit" class="contact__input" id="message" required
+                     <textarea type="message" name="message" class="contact__input" id="message" required
                         placeholder="Message"></textarea>
                      <lable for="message" class="contact__label">Message</lable>
                   </div>
@@ -498,6 +492,8 @@
                   </input>
 
                </form>
+
+
             </div>
 
 
