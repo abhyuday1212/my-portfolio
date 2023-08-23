@@ -175,6 +175,7 @@ img {
 }
 
 .main {
+  position: relative;
   overflow: hidden;
   /* For animation ScrollReveal */
 }
@@ -355,11 +356,11 @@ img {
 /*=============== HOME ===============*/
 .home__container {
   padding-top: 2rem;
-  /* -webkit-user-select: none; */
+  -webkit-user-select: none;
   /* Safari */
-  /* -ms-user-select: none; */
+  -ms-user-select: none;
   /* IE 10 and IE 11 */
-  /* user-select: none; */
+  user-select: none;
   /* Standard syntax */
 }
 
@@ -927,7 +928,7 @@ img {
   background-color: var(--container-color);
   padding: 1.5rem 1.5rem 1.5rem;
   margin-left: auto;
-  padding-bottom: 10px;
+  padding-bottom: 66px;
   border-bottom: 4px solid var(--first-color);
   z-index: 5;
   transition: background-color .4s;
