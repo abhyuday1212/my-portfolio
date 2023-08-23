@@ -1208,7 +1208,7 @@ img {
 
 .footer__copy {
   color: var(--text-color-light);
-  font-size: 1rem;
+  font-size: var(--small-font-size);
   text-align: center;
   border: 2px solid black;
 }
