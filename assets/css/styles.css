@@ -1056,7 +1056,7 @@ img {
   background-color: crimson;
   opacity: 0.8;
   color: white;
-  
+
 }
 
 
@@ -1131,7 +1131,8 @@ img {
   width: 100%;
 
 }
-#contact__email{
+
+#contact__email {
   color: crimson;
   opacity: 0.8;
 }
@@ -1190,6 +1191,32 @@ img {
 }
 
 /*=============== FOOTER ===============*/
+.footer {
+  background-color: var(--black-color);
+}
+
+.footer__container {
+  padding-block: 1rem 1rem;
+  row-gap: 1rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  margin: 0 0;
+}
+
+.footer__copy {
+  color: var(--text-color-light);
+  font-size: 1rem;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.footer__copy a {
+  color: var(--white-color);
+  font-weight: var(--font-medium);
+}
 
 
 /*=============== SCROLL BAR ===============*/
