@@ -1198,11 +1198,9 @@ img {
 .footer__container {
   padding-block: 1rem 1rem;
   row-gap: 1rem;
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-wrap: wrap; */
   margin: 0 0;
 }
 
