@@ -141,7 +141,7 @@ function initializeTyped() {
     typeSpeed: 25,
     backSpeed: 0,
     smartBackspace: true,
-    loop: true,
+    loop: false,
   });
 }
 initializeTyped();
@@ -189,16 +189,21 @@ const sr = ScrollReveal({
   origin: "top",
   distance: "60px",
   duration: 2500,
-  delay: 400,
-  reset: true  //animations repeat
+  delay: 150,
+  // reset: true  //animations repeat
 });
 
-sr.reveal(`.home__perfil, .about__image, .contact__mail`, { origin: 'right' })
 sr.reveal(
-  `.home__name,.home__info, .about__container , .section__title-1 , .about__info, .contact__social, .contact__data,.autotype1`,
+  `.home__perfil, .about__image, .contact__mail,.projectcontainer,.section__title-2`,
+  {
+    origin: "right",
+  }
+);
+sr.reveal(
+  `.home__name,.autotype1,.home__info, .about__container , .section__title-1 , .about__info, .contact__social, .contact__data,.autotype1`,
   { origin: "left" }
 );
-sr.reveal(`.services__card, card__container`, { interval: 100 });
+sr.reveal(`.services__card, .card__container`, { interval: 90 });
 
 
 
