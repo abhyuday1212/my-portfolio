@@ -141,7 +141,7 @@ function initializeTyped() {
     typeSpeed: 25,
     backSpeed: 0,
     smartBackspace: true,
-    loop: false,
+    loop: true,
   });
 }
 initializeTyped();
@@ -189,8 +189,8 @@ const sr = ScrollReveal({
   origin: "top",
   distance: "60px",
   duration: 2500,
-  delay: 150,
-  // reset: true  //animations repeat
+  delay: 130,
+  reset: true  //animations repeat
 });
 
 sr.reveal(
